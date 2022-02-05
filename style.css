@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,500,700&display=swap");
+
+:root {
+    --radius: 0.3rem;
+    --clr-black: #222;
+    --clr-white: #fff;
+    --transition: all 0.2s linear;
+    --clr-utama: #393E46;
+    --clr-sekunder: #00ADB5;
+    --clr-pelengkap: #AAD8D3;
+    --clr-teks: #EEEEEE;
+    --ff-primary: "Roboto", sans-serif;
+    --spacing: 0.1rem;
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f1f5f8;
+    ;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.kata .quote {
+    background: var(--clr-utama);
+    color: var(--clr-teks);
+    padding: 1rem;
+    max-width: 700px;
+    border-radius: var(--radius);
+    margin: auto;
+    font-weight: 500;
+    font-family: var(--ff-primary);
+    letter-spacing: var(--spacing);
+    line-height: 1.25;
+    border: 2px solid var(--clr-white);
+}
+
+.kata .info {
+    color: var(--clr-utama);
+    margin-bottom: 2rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+    font-family: var(--ff-primary);
+    letter-spacing: var(--spacing);
+    line-height: 1.25;
+}
+
+.tombol {
+    font-family: var(--ff-primary);
+    text-transform: uppercase;
+    background: var(--clr-white);
+    color: var(--clr-black);
+    letter-spacing: var(--spacing);
+    display: inline-block;
+    font-weight: 700;
+    transition: var(--transition);
+    border: 2px solid var(--clr-black);
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: var(--radius);
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    margin-right: 0.2em;
+    margin-left: 0.2em;
+}
+
+.tombol:hover {
+    color: var(--clr-teks);
+    background: var(--clr-utama);
+    border: 2px solid var(--clr-utama);
+}
